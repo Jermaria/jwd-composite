@@ -4,16 +4,12 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import by.jwd.task7.component.TextComponent;
-import by.jwd.task7.parser.impl.ParagraphParser;
 import by.jwd.task7.reader.TextReaderException;
 import by.jwd.task7.validation.FileValidator;
 
