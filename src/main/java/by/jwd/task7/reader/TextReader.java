@@ -19,22 +19,6 @@ import by.jwd.task7.validation.FileValidator;
 
 public class TextReader {
     
-    public static void main(String[] args) {
-        TextReader reader = new TextReader();
-        String s;
-        
-        try {
-            s = reader.readStringsFromFile("resources/data/text.txt");
-            ParagraphParser parser = new ParagraphParser();
-            TextComponent comp = parser.parse(s);
-          //  System.out.println("pp \n" + "khkjh");
-            System.out.println(comp.toString());
-        } catch (TextReaderException e) {
-            e.printStackTrace();
-        }
-        
-    }
-    
     private static final String DEFAULT_FILE_PATH = "resources/data/text";
     private static final Logger logger = LogManager.getLogger();
     
